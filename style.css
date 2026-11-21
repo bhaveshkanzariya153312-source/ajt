@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#1f2937}
+a{text-decoration:none;color:#2563eb}
+h1,h2,p{margin-top:0}
+.landing{min-height:100vh;background:linear-gradient(135deg,#172554,#1d4ed8,#0f766e)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.hero-card,.login-card{background:#fff;border-radius:24px;padding:42px;box-shadow:0 25px 70px rgba(0,0,0,.25);text-align:center;width:min(720px,100%)}
+.login-card{max-width:460px}
+.logo-circle{width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eff6ff;font-size:34px;margin:0 auto 18px}
+.hero-card h1{font-size:38px;margin-bottom:12px}.hero-card p{color:#64748b;font-size:18px}
+.hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:28px 0}.tech-line{font-size:13px;color:#94a3b8}
+.btn{display:inline-block;border:0;border-radius:10px;background:#2563eb;color:white;padding:11px 18px;font-weight:600;cursor:pointer}
+.btn:hover{background:#1d4ed8}.btn.secondary{background:#e2e8f0;color:#334155}.btn.secondary:hover{background:#cbd5e1}.btn.small{padding:7px 11px;font-size:12px}.btn.full{width:100%;margin-top:10px}
+button:disabled{opacity:.5;cursor:not-allowed}
+.login-card form{text-align:left}.login-card h2{font-size:28px}.login-card p{color:#64748b}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 7px}
+input,select{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:11px 12px;background:#fff;font-size:14px;outline:none}
+input:focus,select:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.hint{font-size:13px;color:#64748b}.form-actions{display:flex;gap:10px;margin-top:22px}
+.app-shell,.student-shell{display:flex;min-height:100vh}.sidebar{width:245px;background:#0f172a;color:#cbd5e1;position:fixed;left:0;top:0;bottom:0;padding:22px 14px;z-index:5}
+.side-title{font-size:20px;font-weight:800;color:white;padding:12px 12px 22px}.sidebar a{display:block;color:#cbd5e1;padding:11px 12px;border-radius:9px;margin:3px 0}.sidebar a:hover{background:#1e293b;color:white}
+.student-side{background:#134e4a}.student-side a:hover{background:#115e59}
+.main-content{margin-left:245px;min-height:100vh;width:calc(100% - 245px)}
+.topbar{height:68px;background:#fff;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;z-index:4}
+.brand{font-weight:800;color:#0f172a}.top-actions{display:flex;align-items:center;gap:16px}.user-badge{background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:7px 12px;font-size:13px;font-weight:700}.logout-link{font-weight:600}
+.page{padding:30px;max-width:1400px;margin:auto}.page-heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:22px}.page-heading h1{font-size:30px;margin-bottom:5px}.page-heading p{color:#64748b;margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-bottom:22px}.stat-card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 18px rgba(15,23,42,.05)}.stat-card span{display:block;color:#64748b;font-size:13px;margin-bottom:10px}.stat-card strong{font-size:30px;color:#0f172a}.small-stat{font-size:18px!important}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:22px;margin-bottom:20px;box-shadow:0 5px 18px rgba(15,23,42,.04)}
+.quick-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}.quick{border:1px solid #dbeafe;background:#f8fbff;padding:15px;border-radius:11px;font-weight:600}
+.table-card{padding:0;overflow:hidden}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:13px 15px;text-align:left;border-bottom:1px solid #e2e8f0;font-size:14px}th{background:#f8fafc;color:#475569;font-size:12px;text-transform:uppercase}tr:hover td{background:#fafcff}.empty{text-align:center;color:#94a3b8;padding:30px}.danger-link{color:#dc2626}
+.search-bar{display:flex;gap:10px;margin-bottom:18px}.search-bar input{max-width:600px}.search-bar .btn{width:auto}
+.badge{display:inline-block;padding:5px 9px;border-radius:20px;font-size:12px;font-weight:700}.available,.returned{background:#dcfce7;color:#166534}.unavailable{background:#fee2e2;color:#991b1b}.issued{background:#fef3c7;color:#92400e}
+.form-card{max-width:700px}.form-card form{max-width:620px}.alert{padding:12px 15px;border-radius:10px;margin-bottom:18px;font-size:14px}.alert.success{background:#dcfce7;color:#166534;border:1px solid #bbf7d0}.alert.error{background:#fee2e2;color:#991b1b;border:1px solid #fecaca}
+.total-fine{background:#fff7ed;color:#9a3412;padding:12px 15px;border-radius:10px}.total-fine strong{font-size:20px}
+.student-fine-box{background:linear-gradient(135deg,#1d4ed8,#0f766e);color:white;border-radius:18px;padding:26px;margin-bottom:20px}.student-fine-box span,.student-fine-box small{display:block;opacity:.9}.student-fine-box strong{display:block;font-size:42px;margin:8px 0}
+.profile-card{display:flex;gap:24px;align-items:center;max-width:700px}.profile-avatar{width:80px;height:80px;border-radius:50%;background:#eff6ff;display:flex;align-items:center;justify-content:center;font-size:36px}
+.footer{text-align:center;color:#94a3b8;font-size:12px;padding:25px}
+@media(max-width:800px){.sidebar{width:205px}.main-content{margin-left:205px;width:calc(100% - 205px)}.page{padding:20px}.hero-card{padding:28px}.hero-card h1{font-size:28px}}
+@media(max-width:600px){.sidebar{position:relative;width:100%;height:auto;bottom:auto}.app-shell,.student-shell{display:block}.main-content{margin-left:0;width:100%}.sidebar a{display:inline-block}.topbar{padding:0 15px}.page-heading{align-items:flex-start;flex-direction:column}.form-actions{flex-wrap:wrap}}
+
+/* ---- extra fixes: no underlines, readable links, consistent buttons ---- */
+a,a:hover,a:focus{text-decoration:none}
+a.btn,a.btn:hover{color:#fff}
+a.btn.secondary,a.btn.secondary:hover{color:#334155}
+.sidebar a,.sidebar a:hover{text-decoration:none}
+.quick{display:block;color:#1e3a8a}.quick:hover{background:#eff6ff}
+.logout-link{color:#2563eb}
+.danger-link,.danger-link:hover{color:#dc2626}
+.login-card a{color:#2563eb;font-weight:600}
+.hero-buttons .btn{color:#fff}.hero-buttons .btn.secondary{color:#334155}
+.alert a{font-weight:700;text-decoration:underline}
+.alert strong{font-weight:700}
